@@ -107,7 +107,7 @@ public class Main {
                         return;
                     }
 
-                    tablePanel.removeAll(); // Очистка таблицы перед загрузкой новых данных
+                    tablePanel.removeAll(); 
 
                     for (String detector : validDetectors) {
                         List<Record> filteredRecords = new ArrayList<>();
@@ -128,7 +128,6 @@ public class Main {
                             timeDifferences.add(diff);
                         }
 
-                        // Создание таблицы для текущего детектора
                         DefaultTableModel model = new DefaultTableModel();
                         model.addColumn("Pierwszy rekord");
                         model.addColumn("Drugi rekord");
